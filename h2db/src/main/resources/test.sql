@@ -1,0 +1,27 @@
+--DROP TABLE IF EXISTS NATION;
+CREATE TABLE NATION(
+    id   INTEGER      NOT NULL AUTO_INCREMENT,
+    name VARCHAR(128) NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10001 ;
+
+--DROP TABLE IF EXISTS user_details;
+CREATE TABLE IF NOT EXISTS `user_details` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `first_name` varchar(50) DEFAULT NULL,
+  `last_name` varchar(50) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `status` tinyint(10) DEFAULT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10001 ;
+
+
+--DROP TABLE IF EXISTS employee;
+CREATE TABLE employee (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL
+   PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10001 ;

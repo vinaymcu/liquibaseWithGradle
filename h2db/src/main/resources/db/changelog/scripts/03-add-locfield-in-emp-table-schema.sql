@@ -1,0 +1,2 @@
+ALTER TABLE public.emp1
+ADD COLUMN loc VARCHAR(64);
